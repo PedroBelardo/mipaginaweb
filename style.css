@@ -1,0 +1,275 @@
+
+
+/* CSS General */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(75, 33, 33);
+    
+}
+
+h3, h2, p, h4 {
+    color: white;
+}
+
+
+#indexBody{
+    background-color: rgb(75, 33, 33);
+}
+
+/* Header */
+.grid-container {
+    display: grid;
+    grid-template:
+      "header  header" 80px
+      "header__nav header__nav" 80px
+       "main   main" auto
+      "footer  footer" 100PX  
+        auto    200px
+}
+
+.header {
+     
+    
+    background-color: rgb(212, 180, 37);
+    border-radius: 2px;
+    justify-content: center;
+    padding: 10px;
+    
+       
+}
+
+nav{
+    width: 100%;
+    font-weight: 500;
+    
+    
+}
+
+.header__nav{
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: -70px;
+    margin-left: 200px;
+    
+    /* justify-content: space-around; */
+}
+
+.header__nav a:hover{
+    color:white;
+}
+
+.header img{
+    width: 100px;
+    margin-top: 20px;
+}
+   
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header__nav li{
+    
+    
+    list-style-type: none;
+ 
+}
+
+/* Footer */
+
+.pie {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer li, a, li{
+    
+    color:white;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.pie a:hover {
+    color: black;
+}
+
+/* CSS Index */
+
+
+.quienesSomos{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 40px;
+    padding-left: 20px; 
+}
+.quienesSomosTitulo{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.quienesSomosImg{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.quienesSomosImg1{
+    padding-bottom: 20px;
+}
+
+/* CSS Productos */  
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "principal principal principal principal"
+    "sec-1 sec-2 "
+    "sec-3 sec-4 "
+}
+
+
+
+
+.imgProducto{
+   
+    max-width: 200px;
+   
+}
+
+
+/* CSS Contacto */
+
+.subscribite{
+    color: white;
+    margin-left: 45%;
+    /* display: flex;
+    align-items: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-right: 10px;
+    border: solid 2px rgb(212, 180, 37);
+    max-width: 300px;
+    max-height: 400px;
+    border-radius: 3px;
+}
+
+.subscribite h3{
+    margin-left: 25%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subscribiteForm{
+    padding-left: 20px;
+    
+}
+
+.subscribiteForm input{
+    margin-left: 10px;
+}
+
+.subscribiteForm #btn{
+    border: solid 2px black;
+    margin-left: 35%    ;
+}
+
+
+/* CCS Ubicacion */
+
+.mapa iframe{
+    margin-left: 30%;
+   
+}
+
+.mapa h3{
+    margin-left: 80%;
+    margin-top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mapa p{
+    margin-left: 70%;
+    margin-top: -20%;
+    margin-bottom: 15%;
+}
+
+@media (max-width:1240px){
+    nav{
+        width: 100%;
+    }
+    .header__nav{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .header{
+        width: 100%;
+    }
+    .quienesSomosImg{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+@media (max-width: 858px){
+   
+    .header__nav{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .header{
+        width: 100%;
+    }
+
+  
+    .quienesSomosImg {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    img{
+        width: 90%;
+    }
+    
+    .quienesSomos, p{
+        width:100%;              
+
+    }
+
+    @media (max-width:320px){
+       
+       nav{
+           width: 100%;
+       }   
+}
+}
+ 
+
