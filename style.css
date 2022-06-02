@@ -58,17 +58,31 @@ nav{
 .header__nav{
     width: 50%;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
     margin-top: -70px;
-    margin-left: 200px;
+    margin-left: 500px;
+    
+
+}
+
+  
+
     
     /* justify-content: space-around; */
-}
+
 
 .header__nav a:hover{
     color:white;
+    animation: colores 7s infinite;
+
+}
+@keyframes colores{
+    0% {color:white}
+    25% {color: brown;}
+    50% {color: rgb(216, 186, 122);}
+    75% {color: blueviolet;}
+    100% {color: blue;}
 }
 
 .header img{
@@ -106,10 +120,12 @@ nav{
     text-decoration: none;
     display: inline-block;
     padding: 10px;
+    
 }
 
 .pie a:hover {
     color: black;
+    animation: colores 7s infinite;
 }
 
 /* CSS Index */
@@ -142,12 +158,15 @@ nav{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
     grid-template-areas:
-    "principal principal principal principal"
-    "sec-1 sec-2 "
-    "sec-3 sec-4 "
+    "header header header header"
+    "sec-1  none sec-2 none"
+    "sec-3  none sec-4 none"
+    "footer footer footer" ;
+    
+
 }
 
 
