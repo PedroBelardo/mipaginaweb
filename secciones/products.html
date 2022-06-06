@@ -5,52 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     
 </head>
 <body>
-    <div class="gridContainer">
-            <header class="header">
-                <figure >
-                    <img class="header__logo"src="../Img/LOGO.jpg" alt="logoPanaderia">
-                </figure>
-                    <nav>
-                            <ul class="header__nav">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../secciones/products.html">Productos</a></li>
-                                <li><a href="../secciones/carrito.html">Carrito</a></li>
-                                <li><a href="../secciones/contact.html">Contacto</a></li>
-                                <li><a href="../secciones/ubicacion.html">Ubicación</a></li>
-                            </ul>
-                    </nav>
-            </header>
-    <div>       
-            <section class="principal" >
-                <article>
-                    <div >
-                        <h2>Productos</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus magni neque incidunt doloremque facilis tenetur officiis perspiciatis! Tenetur dolore molestiae aliquid, nostrum adipisci cupiditate, inventore ex fugiat illum voluptates sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus magni neque incidunt doloremque facilis tenetur officiis perspiciatis! Tenetur dolore molestiae aliquid, nostrum adipisci cupiditate, inventore ex fugiat illum voluptates sint.</p>
+    <header class="header">  
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Panaderia</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../secciones/products.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../secciones/carrito.html">Carrito</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../secciones/contact.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../secciones/ubicacion.html">Ubicacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled"></a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar Producto</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="cardscontainer">      
+         <div class="card" style="width: 18rem;">
+             <img src="./ImgProductos/masamadre.jpg" class="card-img-top" alt="Pan Masa madre">
+                 <div class="card-body">
+                      <h5 class="card-title">Pan de masa madre</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                </article>
-            </section>
-                <section class="sec-1">
-                            <h4>Pan masa madre</h4>
-                            <img class="imgProducto" src="./ImgProductos/masamadre.jpg" alt="Pan de masa madre">
-                </section>
-                <section class="sec-2">
-                            <h4 >Docena de medialunas</h4>
-                            <img class="imgProducto" src="./ImgProductos/medialunas.jpg" alt="Docena de medialunas">
-                </section>
-                <section class="sec-3">
-                            <h4>Pan de hamburguesa</h4>
-                            <img class="imgProducto" src="./ImgProductos/hambrguesa.jpg" alt="Pan de hamburguesa">
-                </section>
-                <section class="sec-4">
-                            <h4>Cookies</h4>
-                            <img class="imgProducto" src="./ImgProductos/cookies.jpg" alt="Cookies">
-                </section>
-
-    
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Precio</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./ImgProductos/medialunas.jpg" class="card-img-top" alt="Medialunas">
+                    <div class="card-body">
+                      <h5 class="card-title">Docena de medialunas</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Precio</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div><div class="card" style="width: 18rem;">
+                    <img src="./ImgProductos/hambrguesa.jpg" class="card-img-top" alt="Pan de hamburguesa">
+                    <div class="card-body">
+                      <h5 class="card-title">Pan de hamburguesa</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Precio</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./ImgProductos/cookies.jpg" class="card-img-top" alt="cookies">
+                    <div class="card-body">
+                      <h5 class="card-title">Cookies</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Precio</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+         </div>
     </div>
             <!--inicio footer-->
             <hr>
@@ -71,5 +122,6 @@
                 </footer>
             </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
