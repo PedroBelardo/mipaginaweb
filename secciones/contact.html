@@ -11,7 +11,7 @@
 <body>
     <header class="header">
 
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg " id="header__nav">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Panaderia</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,34 +47,28 @@
           </nav>
     </header>
     <section>
-        <article>
-    <!--formulario-->      
-            <div class="subscribite">
-                <h3>Suscribite para obtener más beneficios</h3>
-                    <form class="subscribiteForm"action="#">
-                        <div>
-                            <label for="name">Nombre</label>
-                            <input type="text"required>
-                        </div><br>
-                        <div>
-                            <label for="Edad">Edad</label>
-                            <input type="number" min="18" max="99"required>
-                        </div><br>
-                        <div>
-                            <label for="Email">Email</label>
-                            <input type="text"required>
-                        </div><br>
-                        <div>
-                            <label for="telefono">Teléfono</label>
-                            <input type="text"required>
-                        </div><br>
-                        <div> 
-                            <input id="btn"type="submit" name="Suscribirme" >
-                        </div>
-                    </form>
-                    
-            </div>
-        </article>
+    <!--formulario--> 
+    
+              
+              <form id="formulario">
+                  <h3>Subscribite para mas informacion</h3>
+                  <div class="form-group text-center" >
+                    <label for="formGroupExampleInput">Nombre Completo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder=".">
+                  </div>
+                  <div class="form-group text-center">
+                    <label for="formGroupExampleInput2">Edad</label>
+                    <input type="number" class="form-control " id="formGroupExampleInput2" placeholder=".">
+                  </div>
+                  <div class="form-group text-center">
+                    <label for="formGroupExampleInput2 text-center">Telefono</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=".">
+                  </div>
+                  <div class="form-group text-center">
+                    <label for="formGroupExampleInput2 text-center">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=".">
+                  </div>
+              </form>   
     </section>
     <!--inicio footer-->
     <hr>
