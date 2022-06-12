@@ -1,0 +1,18 @@
+// variables
+$whites: white;
+
+// footer
+
+.pie {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    &hover {
+        color: black;
+        animation: colores 7s infinite;
+    }
+}
+
