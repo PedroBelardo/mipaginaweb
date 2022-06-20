@@ -246,7 +246,7 @@ $blacks : black;
     .quienesSomosImg {
         @include flex-column;g
     
-    }
+    
     img{
         width: 90%;
     }
@@ -261,8 +261,4 @@ $blacks : black;
        nav{
            width: 100%;
        }   
-  }
-  }
-  
-  
-  
+  }}
