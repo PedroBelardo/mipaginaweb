@@ -1,19 +1,29 @@
 // variables
 $whites: white;
+$marron : rgb(75, 33, 33);
+$blacks : black;
 
-// footer
 
-.pie {
+//mixin
+
+@mixin flex-spaceAround {
+    
     display: flex;
     justify-content: space-around;
-    margin: 10px;
-    padding-top: 50px;
-    padding-bottom: 10px;
 
-    &hover {
-        color: black;
-        animation: colores 7s infinite;
-    }
+}
+
+@mixin flex-center{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -30,17 +40,17 @@ $whites: white;
   
   body {
     font-family: sans-serif;
-    background-color: rgb(75, 33, 33);
+    background-color: $marron
     
   }
   
   h3, h2, p, h4 {
-    color: white;
+    color: $whites
   }
   
   
   #indexBody{
-    background-color: rgb(75, 33, 33);
+    background-color: $marron
   }
   
   /* Header */
@@ -74,26 +84,18 @@ $whites: white;
   
   .header__nav {
     width: 50%;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     margin-bottom: 20px;
     margin-top: -70px;
     margin-left: 500px;
                     &hover {
-                        color:white;
+                        color:$whites;
                     animation: colores 7s infinite;
                     } 
-  
   }
-  
-  
-  
-    
-    /* justify-content: space-around; */
-  
 
   @keyframes colores{
-    0% {color:white}
+    0% {color:$whites}
     25% {color: brown;}
     50% {color: rgb(216, 186, 122);}
     75% {color: blueviolet;}
@@ -108,7 +110,7 @@ $whites: white;
   
   .header a{
     text-decoration: none;
-    color: black;
+    color: $blacks;
   }
   
   .header__nav li{
@@ -118,22 +120,25 @@ $whites: white;
   
   }
   
-  /* Footer */
-  
-  .pie {
-    display: flex;
-    justify-content: space-around;
+// footer
+
+.pie {
+    @include flex-spaceAround;
     margin: 10px;
     padding-top: 50px;
-    padding-bottom: 10px; }
-    .piehover {
-      color: black;
-      animation: colores 7s infinite; }
+    padding-bottom: 10px;
+
+    &hover {
+        color: $blacks;
+        animation: colores 7s infinite;
+    }
+}
+
   
   
   .footer li, a, li{
     
-    color:white;
+    color:$whites;
     list-style-type: none;
     text-decoration: none;
     display: inline-block;
@@ -147,26 +152,20 @@ $whites: white;
   
   
   .quienesSomos{
-    display: flex;
-    justify-content: center;
-    color: white;
+    @include flex-center;
+    color: $whites;
     margin-top: 40px;
     padding-left: 20px; 
   }
   .quienesSomosTitulo{
-    display: flex;
-    justify-content: center;
+
+    @extend .quienesSomos;
     padding-top: 40px;
   }
   
   .quienesSomosImg{
-    display: flex;
-    justify-content: space-around;
+    @include flex-spaceAround;
     margin-top: 20px;
-  }
-  
-  .quienesSomosImg1{
-    padding-bottom: 20px;
   }
   
   /* CSS Productos */  
@@ -190,7 +189,7 @@ $whites: white;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: $whites;
     margin-top: 100px;
     margin-bottom: 100px;
   }
@@ -220,8 +219,7 @@ $whites: white;
         width: 100%;
     }
     .header__nav{
-        display: flex;
-        justify-content: center;
+        @include flex-center;
     }
     
     
@@ -229,16 +227,14 @@ $whites: white;
         width: 100%;
     }
     .quienesSomosImg{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
     }
     }
   
   @media (max-width: 858px){
    
     .header__nav{
-        display: flex;
-        justify-content: center;
+        @include flex-center;
     }
     
     
@@ -248,8 +244,7 @@ $whites: white;
   
   
     .quienesSomosImg {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;g
     
     }
     img{
