@@ -1,33 +1,9 @@
-// variables
-$whites: white;
-$marron : rgb(75, 33, 33);
-$blacks : black;
+// import
 
+@import "mixins";
+@import "variables";
 
-//mixin
-
-@mixin flex-spaceAround {
-    
-    display: flex;
-    justify-content: space-around;
-
-}
-
-@mixin flex-center{
-
-    display: flex;
-    justify-content: center;
-
-}
-
-@mixin flex-column {
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-/* CSS General */
+// Css General
 
 *{
     padding: 0;
@@ -261,5 +237,6 @@ $blacks : black;
        nav{
            width: 100%;
        }   
-  }
-}
+      }
+    }}
+    
